@@ -25,7 +25,7 @@ declare global {
 export function getConfigSync(): ConfigSchema {
   try {
     // Try to get from electron store if available
-    if (window.electronAPI && window.electronAPI.getConfigSync) {
+    if (window.electronAPI && typeof window.electronAPI.getConfigSync === 'function') {
       return window.electronAPI.getConfigSync();
     }
   } catch (error) {
@@ -38,7 +38,7 @@ export function getConfigSync(): ConfigSchema {
 // Load configuration asynchronously
 export async function getConfig(): Promise<ConfigSchema> {
   try {
-    if (window.electronAPI && window.electronAPI.getConfig) {
+    if (window.electronAPI && typeof window.electronAPI.getConfig === 'function') {
       const config = await window.electronAPI.getConfig();
       return config as ConfigSchema;
     }
@@ -52,7 +52,7 @@ export async function getConfig(): Promise<ConfigSchema> {
 // Save configuration
 export async function saveConfig(config: ConfigSchema): Promise<void> {
   try {
-    if (window.electronAPI && window.electronAPI.saveConfig) {
+    if (window.electronAPI && typeof window.electronAPI.saveConfig === 'function') {
       await window.electronAPI.saveConfig(config);
     }
   } catch (error) {

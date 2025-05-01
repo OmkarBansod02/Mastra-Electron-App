@@ -4,7 +4,7 @@ import mastraService from '../services/mastraService';
 
 interface ChatInterfaceProps {
   isConnected: boolean;
-  onSendMessage: (message: string) => void;
+  onSendMessage?: (message: string) => void;
   agentId?: string;
 }
 
@@ -161,10 +161,12 @@ const ChatInterface: React.FC<ChatInterfaceProps> = ({ isConnected, onSendMessag
       });
     } finally {
       setIsProcessing(false);
+      
+      // Notify parent component if callback exists
+      if (onSendMessage) {
+        onSendMessage(messageText);
+      }
     }
-    
-    // Also pass to parent component for any additional handling
-    onSendMessage(messageText);
   };
 
   // Send icon for button

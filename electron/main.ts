@@ -48,11 +48,6 @@ function createWindow() {
 
   mainWindow.loadURL(startUrl);
 
-  // Open DevTools in development mode
-  if (process.env.NODE_ENV === 'development') {
-    // Removed automatic DevTools opening
-  }
-
   // Emitted when the window is closed
   mainWindow.on('closed', () => {
     // Dereference the window object

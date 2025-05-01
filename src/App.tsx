@@ -72,11 +72,6 @@ const App: React.FC = () => {
     }
   };
 
-  const handleSendMessage = async (message: string) => {
-    // We don't need to handle message sending here anymore
-    // The ChatInterface component directly interacts with the mastraService
-  };
-
   return (
     <div className="app-container">
       <Header 
@@ -87,7 +82,6 @@ const App: React.FC = () => {
       <main className="main-content">
         <ChatInterface 
           isConnected={isConnected}
-          onSendMessage={handleSendMessage}
           agentId={settings.agentId}
         />
       </main>
