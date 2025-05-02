@@ -17,7 +17,7 @@ First, clone this repository to your local machine.
 Navigate to the project directory and install dependencies:
 
 ```bash
-cd Electron-Desktop
+cd Mastra-Electron-App
 npm install
 ```
 
