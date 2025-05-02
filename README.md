@@ -10,17 +10,23 @@ The Mastra Desktop App is an Electron-based application that provides a desktop 
 
 ## Getting Started
 
+### 1. Clone the Repository
 ```bash
-# Clone the repository
 git clone https://github.com/OmkarBansod02/Mastra-Electron-App.git
+```
 
-# Navigate to project directory
+### 2. Navigate to project directory
+```bash
 cd Mastra-Electron-App
+```
 
-# Install dependencies
+### 3. Install Dependencies
+```bash
 npm install
+```
 
-# Run the application
+### 4. Run pplication
+```bash
 npm run dev
 ```
 
