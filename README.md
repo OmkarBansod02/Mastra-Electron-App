@@ -109,7 +109,7 @@ If you encounter build issues:
 - React: UI library
 - TypeScript: Typed JavaScript
 - @mastra/client-js: Client library for Mastra AI
-- @assistant-ui/react: UI components for assistant interface
+
 
 ## License
 ISC
