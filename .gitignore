@@ -5,6 +5,7 @@
 /dist/
 /out/
 *.js
+!webpack.config.js
 *.js.map
 
 # Environment files
