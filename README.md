@@ -1,7 +1,7 @@
-# Mastra Personal Assistant Desktop App
+# Mastra Desktop App
 
 ## Overview
-The Mastra Personal Assistant Desktop App is an Electron-based application that provides a desktop interface for interacting with the Mastra AI assistant. It allows you to connect to your Mastra agent and have conversations right from your desktop.
+The Mastra Desktop App is an Electron-based application that provides a desktop interface for interacting with the Mastra AI Agent. It allows you to connect to your Mastra agent and have conversations right from your desktop.
 
 ## Prerequisites
 - [Node.js](https://nodejs.org/) (v16 or higher)
