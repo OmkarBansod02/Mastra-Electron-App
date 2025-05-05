@@ -6,6 +6,7 @@ module.exports = {
   mode: 'development',
   entry: {
     main: './electron/main.ts',
+    preload: './electron/preload.ts',
     renderer: './src/index.tsx',
   },
   target: 'electron-renderer',
@@ -41,7 +42,8 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [
-        { from: 'assets', to: 'assets', noErrorOnMissing: true }
+        { from: 'assets', to: '.', noErrorOnMissing: true },
+        { from: 'public', to: '.', noErrorOnMissing: true }
       ],
     }),
   ],
